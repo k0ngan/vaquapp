@@ -9,21 +9,22 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="sidebar">
+  <aside class="sidebar">
     <div class="sidebar-header">
       <img src="assets/logo.png" alt="VaquApp Logo" class="logo" />
       <h2>VaquApp</h2>
+      <button class="collapse-btn" onclick="toggleSidebar()">«</button>
     </div>
     <nav class="sidebar-nav">
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#funciones">Funciones</a></li>
-        <li><a href="#trazas">Trazas</a></li>
-        <li><a href="#prediccion">Predicción</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inicio"><span class="icon">🏠</span><span class="text">Inicio</span></a></li>
+        <li><a href="#funciones"><span class="icon">🔍</span><span class="text">Funciones</span></a></li>
+        <li><a href="#trazas"><span class="icon">📈</span><span class="text">Trazas</span></a></li>
+        <li><a href="#prediccion"><span class="icon">🤖</span><span class="text">Predicción</span></a></li>
+        <li><a href="#contacto"><span class="icon">✉️</span><span class="text">Contacto</span></a></li>
       </ul>
     </nav>
-  </div>
+  </aside>
   <div class="main-content">
     <header class="topbar">
       <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
@@ -38,41 +39,41 @@
     </section>
 
     <section id="funciones" class="section">
-      <h2>Funciones Principales</h2>
+      <h2>Funciones principales</h2>
       <div class="grid">
         <div class="card">
-          <h3>Monitoreo por Cámara y TAG</h3>
+          <h3>Monitoreo por cámara y TAG</h3>
           <p>Registro automático de ubicación y actividad mediante cámaras y etiquetas RFID.</p>
         </div>
         <div class="card">
-          <h3>Alertas Inteligentes</h3>
+          <h3>Alertas inteligentes</h3>
           <p>Notificaciones en tiempo real ante fugas, inactividad o comportamientos anómalos.</p>
         </div>
         <div class="card">
-          <h3>Ingreso de Datos de Peso</h3>
+          <h3>Ingreso de datos de peso</h3>
           <p>Entrada manual de peso por usuarios y almacenamiento histórico.</p>
         </div>
       </div>
     </section>
 
-    <section id="trazas" class="section light">
-      <h2>Trazas y Reportes</h2>
+    <section id="trazas" class="section">
+      <h2>Trazas y reportes</h2>
       <div class="grid">
         <div class="card">
-          <h3>Trazabilidad de Peso</h3>
-          <p>Visualización de evolución de peso por individuo a través del tiempo.</p>
+          <h3>Historial de movimientos</h3>
+          <p>Visualiza rutas, ubicaciones y eventos de cada animal.</p>
         </div>
         <div class="card">
-          <h3>Histórico de Salud</h3>
-          <p>Registro de eventos sanitarios y tratamientos asociados.</p>
-        </div>
-        <div class="card">
-          <h3>Exportación de Reportes</h3>
-          <p>Descarga de datos en formatos CSV y PDF para análisis externo.</p>
+          <h3>Reportes descargables</h3>
+          <p>Exporta información relevante en PDF o Excel para gestión y auditoría.</p>
         </div>
       </div>
     </section>
 
+    <section id="prediccion" class="section">
+      <h2>Modelos predictivos</h2>
+      <div class="grid">
+        <div class="card">
     <section id="prediccion" class="section">
       <h2>Modelos Predictivos</h2>
       <div class="grid">
