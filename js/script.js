@@ -1,8 +1,15 @@
+
 function toggleSidebar() {
-  document.querySelector('.sidebar').classList.toggle('closed');
+  const sidebar = document.querySelector('.sidebar');
+  if (window.innerWidth <= 900) {
+    sidebar.classList.toggle('active');
+  } else {
+    sidebar.classList.toggle('closed');
+  }
 }
 
 // Scroll suave para anclas
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
